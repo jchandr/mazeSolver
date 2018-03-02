@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Maze Solver</title>
+  </head>
+  <body>
+    <div class="container">
+    <form>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Row Count</label>
+        <input type="text" class="form-control" id="gridRowCount" placeholder="enter value from 1-50">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Column Count</label>
+        <input type="text" class="form-control" id="gridColumnCount" placeholder="enter value from 1-50">
+      </div>
+  </form>
+
+  <button class="btn btn-primary" id="createGrid">Create Grid</button>
+  <button class="btn btn-secondary" id="deleteGrid">Delete Grid</button>
+  <button class="btn btn-primary" id="solveGrid">Solve Grid</button>
+  <button class="btn btn-secondary" id="resetGrid">Reset Grid</button>
+
+  <div class="row">
+    <div class="col-sm">
+      <div class="wallBlock"></div>Wall
+    </div>
+    <div class="col-sm">
+      <div class="startBlock"></div>Start
+    </div>
+    <div class="col-sm">
+      <div class="endBlock"></div>End
+    </div>
+    <div class="col-sm">
+      <div class="pathBlock"></div>Path
+    </div>
+    <div class="col-sm">
+      <div class="routeBlock"></div>Route
+    </div>
+  </div>
+  <div id="mazeGrid" class="container mazeGridDiv">
+    <!-- grid divs are auto generated here -->
+  </div>
+  <div id="solvingInfo">
+  </div>
+  </body>
+  </div>
+</html>

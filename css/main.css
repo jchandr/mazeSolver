@@ -1,0 +1,45 @@
+:root {
+  --square-length: 12px;
+}
+
+body {
+  background: #929292;
+}
+
+.wallBlock, .startBlock, .endBlock, .pathBlock, .routeBlock {
+  width: var(--square-length);
+  height: var(--square-length);
+  border-style: solid;
+  border-width: 1px;
+  border-color: blue;
+}
+
+.wallBlock {
+  background: black;
+}
+
+.startBlock {
+  background: green;
+}
+
+.endBlock {
+  background: red;
+}
+
+.pathBlock {
+  background: #fffff2;
+}
+
+.routeBlock {
+  background: blue;
+}
+
+.mazeGridDiv {
+  align-items: center;
+  display: block;
+}
+
+.solvingInfo {
+  font-weight: 20px;
+  color: red;
+}
