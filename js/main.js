@@ -161,7 +161,7 @@ $(document).ready(() => {
     if(!mazeGrid.length > 0) {
       alert('please create a grid')
     } else {
-      $('#solvingInfo').html = 'Solving Please Wait !'
+      $('#solvingInfo').html('Solving Please Wait !')
         for(var i = 0;i<mazeGrid.length;i++){
           for(var j=0;j<mazeGrid[0].length;j++){
             mazeGrid[i][j].isRoute = false
@@ -169,7 +169,7 @@ $(document).ready(() => {
         }
         $.fn.solveGrid(startPoint.row, startPoint.column)
         $.fn.createGrid(mazeGrid)
+        $('#solvingInfo').html('Done')
     }
-    $('#solvingInfo').innerHTML = 'Done'
   })
 })
